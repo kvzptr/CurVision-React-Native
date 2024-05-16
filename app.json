@@ -1,13 +1,14 @@
 {
   "expo": {
     "name": "CurVision",
+    "scheme": "CurVision",
     "slug": "CurVision",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/cv_logo.webp",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/cv_logo.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -18,13 +19,18 @@
       "supportsTablet": true
     },
     "android": {
+      "permissions": ["ACCESS_FINE_LOCATION"],
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/cv_logo.webp",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.curvision"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      "favicon": "./assets/cv_logo.webp"
+    },
+    "plugins": [
+      "expo-router"
+    ]
   }
 }
